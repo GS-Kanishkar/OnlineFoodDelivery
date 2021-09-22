@@ -1,5 +1,10 @@
 package com.sprintaws.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="address_master")
 public class Address 
 {
 	private String addressId;

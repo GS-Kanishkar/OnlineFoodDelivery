@@ -2,6 +2,14 @@ package com.sprintaws.entity;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+
+@Entity
+@Table(name="bill_master")
+
 public class Bill
 {
 	private String billId;
@@ -52,3 +60,7 @@ public class Bill
 	}
 	
 }
+
+
+
+

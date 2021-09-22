@@ -1,5 +1,10 @@
 package com.sprintaws.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="category_master")
 public class Category
 {
 	private String catId;

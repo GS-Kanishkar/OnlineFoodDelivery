@@ -2,8 +2,21 @@ package com.sprintaws.entity;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="order_master")
 public class OrderDetails 
 {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name = "id")
 	private int orderId;
 	private LocalDateTime orderDate;
 	FoodCart cart;
@@ -42,3 +55,7 @@ public class OrderDetails
 		this.orderStatus = orderStatus;
 	}
 }
+
+
+
+

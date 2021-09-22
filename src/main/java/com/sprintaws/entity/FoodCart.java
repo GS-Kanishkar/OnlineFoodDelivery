@@ -2,6 +2,11 @@ package com.sprintaws.entity;
 
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="foodcart_master")
 public class FoodCart 
 {
 	private String cartId;
